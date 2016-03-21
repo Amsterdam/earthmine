@@ -1,10 +1,10 @@
 <?php
+include 'vars.inc.php';
 
 $lat = isset($_GET['lat']) ? $_GET['lat'] : 0;
 $lon = isset($_GET['lon']) ? $_GET['lon'] : 0;
 
 $id = isset($_GET['id']) ? $_GET['id'] : null;
-
 
 $secret = getenv('EARTHMINE_SECRET');
 $key = getenv('EARTHMINE_KEY');

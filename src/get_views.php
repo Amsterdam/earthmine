@@ -1,4 +1,5 @@
 <?php
+include 'vars.inc.php';
 
 function exitPlaceholder() {
     if (isset($_GET['dl'])) {
