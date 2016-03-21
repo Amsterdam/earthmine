@@ -6,8 +6,8 @@ $lon = isset($_GET['lon']) ? $_GET['lon'] : 0;
 
 $id = isset($_GET['id']) ? $_GET['id'] : null;
 
-$secret = getenv('EARTHMINE_SECRET');
-$key = getenv('EARTHMINE_KEY');
+$secret = $_ENV('EARTHMINE_SECRET');
+$key = $_ENV('EARTHMINE_KEY');
 $time = time();
 $sig = hash('md5', $key . $secret . $time);
 
