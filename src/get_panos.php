@@ -1,5 +1,4 @@
 <?php
-include 'vars.inc.php';
 
 $lat = isset($_GET['lat']) ? $_GET['lat'] : 0;
 $lon = isset($_GET['lon']) ? $_GET['lon'] : 0;

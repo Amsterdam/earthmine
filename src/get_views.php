@@ -1,5 +1,4 @@
 <?php
-include 'vars.inc.php';
 
 function exitPlaceholder() {
     if (isset($_GET['dl'])) {
@@ -33,8 +32,8 @@ if (!$lon || !$lat) {
     exit();
 }
 
-$secret = getenv('EARTHMINE_SECRET');
-$key = getenv('EARTHMINE_KEY');
+$secret = $_ENV('EARTHMINE_SECRET');
+$key = $_ENV('EARTHMINE_KEY');
 $time = time();
 $sig = hash('md5', $key . $secret . $time);
 
