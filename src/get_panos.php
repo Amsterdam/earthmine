@@ -58,5 +58,6 @@ if (empty($result->result->panoramas)) {
 }
 
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: Authorization");
 header("Content-type: application/json");
 echo json_encode($result->result->panoramas[0]);
