@@ -1,5 +1,5 @@
 earthmine:
   build: .
   ports:
-    - "8088:80"
+    - "80"
   env_file: atlas_earthmine.env
