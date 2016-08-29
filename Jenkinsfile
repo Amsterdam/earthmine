@@ -43,7 +43,7 @@ node {
                 parameters: [
                         [$class: 'StringParameterValue', name: 'INVENTORY', value: 'acceptance'],
                         [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-earthmine.yml'],
-                        [$class: 'StringParameterValue', name: 'BRANCH', value: 'develop'],
+                        [$class: 'StringParameterValue', name: 'BRANCH', value: 'master'],
                 ]
     }
 }
